@@ -13,3 +13,5 @@ service 'apache' do
 	service_name 'httpd'
 	action [:enable, :start]
 end
+
+include_recipe 'apache::websites'
