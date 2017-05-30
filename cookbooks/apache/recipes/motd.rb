@@ -1,4 +1,5 @@
 Hostname = node['hostname']
 file 'motd file' do
-	content 'Hostname is :' #{Hostname}
+	path '/etc/motd'
+	content "Hostname is : #{Hostname}"
 end
